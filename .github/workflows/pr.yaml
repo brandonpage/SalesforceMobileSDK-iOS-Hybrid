@@ -31,13 +31,12 @@ jobs:
         uses: actions/checkout@v4
         with:
           # We need a sufficient depth or Danger will occasionally run into issues checking which files were modified.
-          fetch-depth: 100
+          # fetch-depth: 100
           # This is dangerous without the member check
-          ref: ${{ github.event.pull_request.head.sha }}
+          # ref: ${{ github.event.pull_request.head.sha }}
+          ref: ${{ github.head_ref }}
       - name: Install Dependencies
-        run: |
-          npm install shelljs@0.8.5
-          ./install.sh
+        run: ./install.sh
       - name: Run Static Analysis
         # It would be nice to use xcbeaufity here but all the warnings and errors get annotated onto the PR, including
         # files not mofified in the PR which is annoying.
