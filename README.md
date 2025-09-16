@@ -1,5 +1,7 @@
 [![Tests](https://github.com/forcedotcom/SalesforceMobileSDK-iOS-Hybrid/actions/workflows/nightly.yaml/badge.svg)](https://github.com/forcedotcom/SalesforceMobileSDK-iOS-Hybrid/actions/workflows/nightly.yaml)
 
+
+
 # Hybrid library / sample apps and tests for Salesforce.com Mobile SDK on iOS
 
 You have arrived at the source repository for the Hybrid library of the Salesforce Mobile SDK on iOS.  Welcome!
